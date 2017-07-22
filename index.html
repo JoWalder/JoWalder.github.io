@@ -31,6 +31,56 @@ h2{
 	<body>
 		<div class="container">
 
+		<h2>July 21th, 2017</h2>
+		<h1>Roll that Dice</h1>
+		<hr>
+
+		<p>Cast a double to an int, sounds pretty technical, right? Well, in certain company talking like this might make you look like a programming genius, but really, it’s a pretty simple concept to understand.  Let’s talk about it today so you are in the “know”.  Casting a double into an int simply means you are using a cast in your code that changes one variable type to another.  So, for example, if we have some code with variable type double and need that value to be an integer we use a chunk of code that temporarily changes it into the variable type your need. What happens is cast type will simply knock off the decimal points so that your double looks like an int to the compiler.  Your next question might be, “Well, if itvknock off the decimal point(s), will it or should it be rounded to the nearest integer?”  The answer, a simple nope, it will just knock off the decimal point.</p>
+
+		 <p>Why would you “cast a double to an int?” Well, let’s say that you are writing a game program that uses a dice (die) to generate a random number from 1 to 6.  We have this nifty method called Math.random that will generate that number for you the only problem is you need an integer from one to six, and Math.random gives you a double from 0.0 to 1 (0 is included, but 1 is exclusive).  What we can do is write a code with the cast type that will temporarily change the double to an int and then we can multiply it by six, and vola! We have a dice (die).    The code looks like this:  x = 1 + (int)(Math.random)*6);  The (int) is the cast type.</p>
+
+     <p>Until next time!</p>
+
+		 <p> </p>
+
+     <p></p>
+	 </div>
+	 </body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>
+			Jodi's Blog
+		</title>
+
+		<style>
+		body {
+	background-color: white;
+	font-family:verdana;
+	font-size: 14px;
+}
+
+
+
+h1 {
+	text-align: center;
+	font-size: 20px;
+	color: #4d4dff;
+}
+h2{
+	font-size: 10px;
+	text-align:left;
+}
+.container{width: 720px; margin: 0 auto;}
+</style>
+
+	</head>
+	<body>
+		<div class="container">
+
 		<h2>July 20th, 2017</h2>
 		<h1>Switching it up!</h1>
 		<hr>
